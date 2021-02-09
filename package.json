@@ -1,14 +1,27 @@
 {
+  "engines": {
+    "node": "14.15.4"
+  },
   "name": "starter",
   "version": "1.0.0",
-  "description": "Node project for quick ramp up",
+  "description": "Node project for quick ramp up for scripting environment.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "nodemon --exec babel-node main.js",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^26.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/node": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.19.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7"
   }
 }
